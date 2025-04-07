@@ -54,7 +54,7 @@ function RegistrationCardLeft() {
         textAlign="center"
         color="white"
       >
-        To keep connected with us please login with your personal info
+        To keep connected with us please login with your personal info.
       </Typography>
       <Button
         variant="outlined"
