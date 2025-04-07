@@ -1,0 +1,37 @@
+:root {
+  --primary-font: "Nunito", sans-serif;
+  --dark-purple-color: rgb(25, 26, 80);
+  --purple-color: rgb(35, 36, 82);
+  --white-color: white;
+  --light-gray-color: #bdb9b9;
+  --dark-gray-color: gray;
+  --dark-gray-color2:rgb(95, 94, 94);
+  --gray-x-light:rgb(241, 239, 239);
+  --black-color: black;
+  --yellow-color:rgb(192, 243, 6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  background-color: var(--gray-x-light);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
