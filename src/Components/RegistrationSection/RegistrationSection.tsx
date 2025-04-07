@@ -17,7 +17,12 @@ function RegistrationSection() {
   return (
     <section className="registration-section">
       <Paper elevation={3}>
-        <Box display="flex"  height="80vh" width="80vw" sx={{flexDirection:{xs:"column", md:"row"}}}>
+        <Box
+          display="flex"
+          height="80vh"
+          width="80vw"
+          sx={{ flexDirection: { xs: "column", md: "row" } }}
+        >
           <RegistrationCardLeft />
           <RegistrationCardRight />
         </Box>
@@ -35,7 +40,10 @@ function RegistrationCardLeft() {
       alignItems="center"
       gap="2rem"
       bgcolor="#42b0a5"
-      sx={{width:{xs:"100%", md:"45%"}, height:{xs:"30%", md:"100%"}}}
+      sx={{
+        width: { xs: "100%", md: "45%" },
+        height: { xs: "30%", md: "100%" },
+      }}
     >
       <Typography variant="h2" textTransform="capitalize" color="white">
         welcome back!
@@ -67,7 +75,10 @@ function RegistrationCardRight() {
       justifyContent="center"
       alignItems="center"
       gap="2rem"
-      sx={{width:{xs:"100%", md:"55%"}, height:{xs:"70%", md:"100%"}}}
+      sx={{
+        width: { xs: "100%", md: "55%" },
+        height: { xs: "70%", md: "100%" },
+      }}
     >
       <Typography variant="h2" textTransform="capitalize" color="#42b0a5">
         create account

@@ -1,14 +1,6 @@
 :root {
   --primary-font: "Nunito", sans-serif;
-  --dark-purple-color: rgb(25, 26, 80);
-  --purple-color: rgb(35, 36, 82);
-  --white-color: white;
-  --light-gray-color: #bdb9b9;
-  --dark-gray-color: gray;
-  --dark-gray-color2:rgb(95, 94, 94);
   --gray-x-light:rgb(241, 239, 239);
-  --black-color: black;
-  --yellow-color:rgb(192, 243, 6);
 }
 
 * {
