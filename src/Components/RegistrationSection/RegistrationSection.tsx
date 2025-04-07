@@ -17,7 +17,7 @@ function RegistrationSection() {
   return (
     <section className="registration-section">
       <Paper elevation={3}>
-        <Box display={"flex"} height={"80vh"} width={"80vw"}>
+        <Box display="flex"  height="80vh" width="80vw" sx={{flexDirection:{xs:"column", md:"row"}}}>
           <RegistrationCardLeft />
           <RegistrationCardRight />
         </Box>
@@ -29,21 +29,21 @@ function RegistrationSection() {
 function RegistrationCardLeft() {
   return (
     <Box
-      display={"flex"}
-      flexDirection={"column"}
-      justifyContent={"center"}
-      alignItems={"center"}
-      gap={"2rem"}
-      width={"45%"}
-      bgcolor={"#42b0a5"}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      gap="2rem"
+      bgcolor="#42b0a5"
+      sx={{width:{xs:"100%", md:"45%"}, height:{xs:"30%", md:"100%"}}}
     >
-      <Typography variant="h2" textTransform={"capitalize"} color="white">
+      <Typography variant="h2" textTransform="capitalize" color="white">
         welcome back!
       </Typography>
       <Typography
         variant="h5"
-        maxWidth={"30rem"}
-        textAlign={"center"}
+        maxWidth="30rem"
+        textAlign="center"
         color="white"
       >
         To keep connected with us please login with your personal info
@@ -62,12 +62,12 @@ function RegistrationCardLeft() {
 function RegistrationCardRight() {
   return (
     <Box
-      width="55%"
-      display={"flex"}
-      flexDirection={"column"}
-      justifyContent={"center"}
-      alignItems={"center"}
-      gap={"2rem"}
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      gap="2rem"
+      sx={{width:{xs:"100%", md:"55%"}, height:{xs:"70%", md:"100%"}}}
     >
       <Typography variant="h2" textTransform="capitalize" color="#42b0a5">
         create account
@@ -99,10 +99,7 @@ function RegistrationCardRight() {
           slotProps={{
             input: {
               startAdornment: (
-                <InputAdornment
-                  position="start"
-                  sx={{fontSize:"1.8rem"}}
-                >
+                <InputAdornment position="start" sx={{ fontSize: "1.8rem" }}>
                   <FaUser />
                 </InputAdornment>
               ),
@@ -119,7 +116,7 @@ function RegistrationCardRight() {
           slotProps={{
             input: {
               startAdornment: (
-                <InputAdornment position="start" sx={{fontSize:"1.8rem"}}>
+                <InputAdornment position="start" sx={{ fontSize: "1.8rem" }}>
                   <MdEmail />
                 </InputAdornment>
               ),
@@ -137,7 +134,7 @@ function RegistrationCardRight() {
           slotProps={{
             input: {
               startAdornment: (
-                <InputAdornment position="start" sx={{fontSize:"1.8rem"}}>
+                <InputAdornment position="start" sx={{ fontSize: "1.8rem" }}>
                   <TbLockPassword />
                 </InputAdornment>
               ),
@@ -148,7 +145,7 @@ function RegistrationCardRight() {
 
       <Button
         variant="outlined"
-        sx={{ color: "white", bgcolor:"#42b0a5", width:"60%",}}
+        sx={{ color: "white", bgcolor: "#42b0a5", width: "60%" }}
       >
         sign up
       </Button>
